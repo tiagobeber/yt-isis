@@ -56,7 +56,7 @@
   window.openApp = () => {
     if (isAndroid && !isInApp) return go(ANDROID_INTENT);
     if (isiOS && !isInApp) {
-      setTimeout(() => go(HTTPS_URL), 800);
+      setTimeout(() => go(HTTPS_URL), 5000);
       return go(IOS_SCHEME);
     }
     return go(HTTPS_URL);
