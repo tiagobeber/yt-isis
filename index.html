@@ -32,7 +32,7 @@
       // Webviews costumam bloquear deep links. Mostre instruções e ofereça HTTPS.
       document.getElementById('advice').style.display = 'block';
       // Mesmo assim, abrir HTTPS já ajuda: fora do IG ele entrega para o app.
-      setTimeout(() => go(HTTPS_URL), 100);
+      setTimeout(() => go(HTTPS_URL), 5000);
       return;
     }
     if (isAndroid) {
